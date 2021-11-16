@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web dokumentasi - seleku</title>
+</head>
+<body class="v-overflowX-hidden">
+   
+    <section class="v-font-poppins v-r-20px text-000 v-pl-45px v-pl-45px mb-pl-0px vc-pt-32px v-box-border v-pst-relative v-w-screen v-h-max v-d-flex v-direction-column">
+        <img xmlns='http://www.w3.org/2000/svg'>
+        <div class="v-pst-relative v-w-80 v-d-display v-ml-auto v-mr-auto">
+            <h1 class="v-font-sz-32px">Seleku JS</h1>
+            <hr>
+            <h1>alpha version</h1>
+            <hr>
+            <h4 class="v-font-sz-22px">🧠konsep</h4>
+            <hr>
+            <p>
+                seleku merupakan framework frontend javascript yang di desain khusus dengan berbagai fitur seperti 
+                reactivity, data binding dan berbagai macam fitur lain, seleku menggunakan vanilla js sehingga akan 
+                berjalan cepat di web browser
+            </p>
+            <h4 class="v-font-sz-22px">kenapa seleku?</h4>
+            <hr>
+            <p>
+                saat ini terdapat banyak framework frontend modern seperti react, svelte dan lain - lain 
+                seleku memiliki cara kerja yang dengan tujuan yang sama seperti framewrok frontend modern 
+                lain tetapi seleku memiliki cara kerja yang berbeda
+            </p>
+            <h1 class="v-font-sz-32px">🕹 User Guide</h1>
+            <hr>
+            <h2>📥 instalasi</h2>
+            <p>
+                untuk melakukan penginstalan seleku anda membutuhkan beberapa hal berikut
+            </p>
+            <div class="v-pst-relative">
+                <ul class="v-d-block v-list-decimal v-text-justify">
+                    <li> 👉 node js</li>
+                    <li> 👉 pemahaman tentang javascript (es5 hingga versi terbaru)</li>
+                    <li> 👉 dan penggunaan npm (node package manager)</li>
+                </ul>
+            </div>
+            <p class="v-w-100">
+                untuk melakukan instalasi cli anda dapat menginstall seleku secara global 
+                melalui npm di komputer anda dengan command atau perintah berikut
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="text-d2a640">npm</span> <span>i -g seleku@latest</span>
+            </div>
+            <p>
+                kemudian lakukan pengecekan dengan mengetikan
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="text-98c379">seleku</span>
+            </div>
+            <p class="v-leading-loose">
+                setelah membuat template silahkan masuk ke folder yang telah di buat dan silahkan jalankan peritah berikut
+                <span class="bg-darks v-radius-sm vc-p-5px"text-98c379"> npm i</span> kemudian <span class="bg-darks v-radius-sm vc-p-5px"text-98c379">npm run dev</span>  untuk development mode dan 
+                <span class="bg-darks v-radius-sm vc-p-5px"text-98c379"> npm run build</span> untuk menjalankan build mode
+            </p>
+            <h1>🧠 pemahaman dasar</h1>
+            <hr>
+            <p>
+                seleku menggunakan component dengan bentukan virtual DOM dan melakukan update melalui DOM TREE
+            </p>
+            <p>
+                seleku melakukan binding dari javascript ke html menggunakan props, props merupakan object 
+                yang menjadi penghubung antara data yang terdapat di javascript ke html
+            </p>
+            <h1>⚒ struktur dasar</h1>
+            <p>
+                seleku menggunakan struktur seperti html biasa akan tetapi seleku hanya akan mengambil satu element 
+                pertama yang akan di jadikan sebagai component sebagai contoh
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="v-font-style-italic v-font-sz-14px"><span class="text-5c6370">&lt;!--</span><span class="text-5c6370">h1 yang akan di jadikan sebagai component</span> <span class="text-5c6370">&gt;!--</span></span>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">h1</span><span>&gt;</span> <span>hello world</span> <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span>
+                <br>
+                <br>
+                <span class="v-font-style-italic v-font-sz-14px"><span class="text-5c6370">&lt;!--</span><span class="text-5c6370">h1 yang akan di jadikan sebagai component</span> <span class="text-5c6370">&gt;!--</span></span>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">div</span> <span class="text-d19a66">class</span><span>=</span><span class="text-98c379">"card"</span><span>&gt;</span> <span>hello world</span> <span>&lt;/</span><span class="text-e06c75">div</span><span>&gt;</span>
+            </div>
+            <p>
+                untuk mengatasi hal tersebut di sarankan untuk memuat semua element di dalam 1 tag khusus seperti div atau sejenisnya (semua element umumnya bisa)
+            </p>
+            <p>
+                untuk memasukan custom script dari seleku cukup masukan tag script ke dalam struktur contoh
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="v-font-style-italic v-font-sz-14px"><span class="text-5c6370">&lt;!--</span><span class="text-5c6370">h1 yang akan di jadikan sebagai component</span> <span class="text-5c6370">&gt;!--</span></span>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">h1</span><span>&gt;</span> <span>hello world</span> <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span>
+                <br>
+                <br>
+                <span class="v-font-style-italic v-font-sz-14px"><span class="text-5c6370">&lt;!--</span><span class="text-5c6370">h1 yang akan di jadikan sebagai component</span> <span class="text-5c6370">&gt;!--</span></span>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">div</span> <span class="text-d19a66">class</span><span>=</span><span class="text-98c379">"card"</span><span>&gt;</span> <span>hello world</span> <span>&lt;/</span><span class="text-e06c75">div</span><span>&gt;</span>
+                <br>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">script</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="text-d19a66 v-ml-20px">console</span><span>.log(</span><span class="text-98c379">"hello world"</span><span>);</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">script</span><span>&gt;</span> 
+            </div>
+            <p>
+                begitu pula untuk style
+            </p>
+            <h1>📥📤 props</h1>
+            <p class="v-leading-loose">untuk membuat props cukup memasukan attribute <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px"> props="nama props"</span> sebagai contoh dan anda dapat melakukan binding di dalam content dengan menggunakan  <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">{{nama props}}</span></p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">h1</span> <span class="text-d19a66">props</span><span>=</span><span class="text-98c379">"nama_user"</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">hallo</span> <span class="text-d19a66">{{nama_user}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span> 
+            </div>
+            <p>
+                untuk mengisi nilai dari props anda dapat menggunakan update state yang di miliki oleh seleku dan jika terdapat lebih dari 1 props berikan spasi contoh <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">props="nama umur"</span>
+            </p>
+            <h2 class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">🍂 inherit:props</h2>
+            <p>
+                <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">inherit:props</span> atau props turunan merupakan props yang di turunkan dari suatu component ke pada children nya sebagai contoh di dalam suatu component misalnya <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">h1</span> terdapat suatu <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">span</span> jika h1 memiliki <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">inherit:props</span> maka props yang di minta oleh element children akan di turunkan dari props parent component
+            </p>
+            <h1>📈 state</h1>
+            <p>
+                seleku memiliki state yang di mana state di gunakan untuk membuat atau menetapkan perubahan pada props terdapat 2 jenis state di dalam seleku
+            </p>
+            <h2>📎 global state</h2>
+            <p>
+                yaitu state yang dapat mengakses semua props di dalam component dan umumnya untuk menggunakan nya dengan cara menuliskan nama file di ikuti dengan update state contoh
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="v-font-sz-14px">//misalkan kita memiliki file utama atau main file</span>
+                <br>
+                <span class="v-font-sz-14px">//dengan nama app.selelu</span>
+                <br>
+                <br>
+                    <span>app.</span><span class="text-c678dd">state</span><span>.nama =</span> <span class="text-98c379">"daberdev"</span>
+                <br>
+            </div>
+            <p>
+                contoh penerapan pada struktur dengan nama file main nya adalah app.seleku
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">h1</span> <span class="text-d19a66">props</span><span>=</span><span class="text-98c379">"nama_user"</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">hallo</span> <span class="text-d19a66">{{nama_user}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span> 
+               <br>
+               <br>
+                <span>&lt;</span><span class="text-e06c75">script</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">app.state.nama_user =</span> <span class="text-98c379">"daberdev"</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">script</span><span>&gt;</span> 
+            </div>
+            <h2>📎 local state</h2>
+            <p class="v-leading-loose">
+                merupakan state yang hanya mengakses props dari component yang lebih spesifik untuk mengakses 
+                component secara spesisifik yaitu dengan menggunakan <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">@id</span> dan di akses menggunakan method 
+                <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">find(args: id)</span>, <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">@id</span> berbeda dengan id biasa <span class="bg-rgba1 v-radius-sm vc-p-5px v-font-sz-14px">@id</span> hanya terdefenisi untuk component bukan element html jika ingin 
+                memasukan attribute id maka anda dapat memasukan seperti biasa
+            </p>
+            <p>contoh penggunaan</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">h1</span> <span>@</span><span class="text-d19a66">id</span><span>=</span><span class="text-98c379">"message"</span> <span class="text-d19a66">props</span><span>=</span><span class="text-98c379">"nama_user"</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">hallo</span> <span class="text-d19a66">{{nama_user}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span> 
+               <br>
+               <br>
+                <span>&lt;</span><span class="text-e06c75">script</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">find(</span> <span class="text-98c379">"message"</span><span>)</span><span>.state.nama_user =</span> <span class="text-98c379">"daverdev"</span><span>;</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">script</span><span>&gt;</span> 
+            </div>
+            <h2>⚙ event</h2>
+            <p>seleku juga memiliki event handling dengan melakukan set event terhadap element untuk melakukan set event ke element di gunakan method</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="text-61aeee">find</span><span>(args: id)</span><span class="text-d19a66">.event.event_name</span>
+            </div>
+            <p>contoh</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">h1</span> <span>@</span><span class="text-d19a66">id</span><span>=</span><span class="text-98c379">"message"</span> <span class="text-d19a66">props</span><span>=</span><span class="text-98c379">"nama_user"</span><span>&gt;</span> 
+                <br>
+                <br>
+                    <span class="v-ml-20px">hallo</span> <span class="text-d19a66">{{nama_user}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span> 
+               <br>
+               <br>
+                <span>&lt;</span><span class="text-e06c75">script</span><span>&gt;</span> 
+                <br>
+                <br>
+                <span class="v-ml-20px">find(</span> <span class="text-98c379">"message"</span><span>)</span><span>.event.onclick = (args)=>{</span>
+                <br>
+                <br>
+                <span class="v-ml-20px">alert(</span><span class="text-d19a66">"aku di click"</span><span>);</span>
+                <br>
+                <br>
+                <span>}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">script</span><span>&gt;</span> 
+            </div>
+            <h2>🤝binding</h2>
+            <p>seleku dapat melakukan binding yang lebih spesifik seperti melakukan penjumlahan di dalam binding memanggil fungsi, bahkan mengakses object maupun array dari props</p>
+            <p>contoh</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">h1</span> <span>&gt;</span> 
+                <br>
+                <br>
+                <span class="v-ml-20px">hasil 1 + 2 :</span> <span class="text-d19a66">{{1 + 2}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">h1</span><span>&gt;</span> 
+            </div>
+            <p class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">pemberitahuan: seleku saat ini tidak dapat melakukan binding dari 2 props yang berbeda di dalam 1 binding</p>
+            <h1>💧 dynamic attribute</h1>
+            <p>seleku memiliki dynamic attribute ( attribute yang dapat berubah - ubah ) dengan cara memberikan binding ke pada attribute</p>
+            <p>contoh</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="text-d19a66"> <span>&lt;</span><span>h1 @id="message" props="nama_user card" class="{{card}}"</span> <span>&gt;</span></span>
+                <br>
+                <br>
+                <span class="v-ml-20px">hallo {{nama_user}}</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span>h1</span><span>&gt;</span> 
+                <br>
+                <br>
+                <br>
+                <span>&lt;</span><span class="text-e06c75">script</span><span>&gt;</span> 
+                <br>
+                <br>
+                <span class="v-ml-20px">find(</span> <span class="text-98c379">"message"</span><span>)</span><span>.</span><span class="text-c678dd">state</span><span>.nama_user =</span> <span class="text-98c379">"daverdev"</span><span>;</span>
+                <br>
+                <br>
+                <span class="v-ml-20px">find(</span> <span class="text-98c379">"message"</span><span>)</span><span>.</span><span class="text-c678dd">state</span><span>.card</span> <span class="text-98c379">"box"</span><span>;</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span class="text-e06c75">script</span><span>&gt;</span> 
+            </div>
+            <h1>✨ seleku special component</h1>
+            <p>seleku juga memiliki beberapa component bawan yaitu component kondisi dan komponent perulangan</p>
+            <h4># condition component</h4>
+            <p>untuk penggunaan condition component cukup meletakan attribute <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">condition="nama props"</span> maka children yang terdapat di dalam component akan di tampikan ketika props nya bernilai true dan akan di destroy ketika bernilai false</p>
+            <h4># looping component</h4>
+            <p>
+                seleku juga memiliki looping component yaitu component yang akan membuat element 
+                berdasarkan list atau array untuk penggunaan yaitu dengan cara memberikan attribute 
+                <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">loop="x of nama props"</span> dan menerapkan props pada component dengan tipe array 
+                dan membuat child component dengan attribute dari hasil looping <span class="bg-rgba1 v-w-max v-radius-sm vc-p-5px v-font-sz-14px">x</span>
+            </p>
+            <p>contoh</p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span>&lt;</span><span class="text-e06c75">ul</span> <span>@</span><span>id</span><span>=</span><span class="text-98c379">"username"</span> <span>props</span><span>=</span><span class="text-98c379">"list_user"</span>  <span>loop</span><span>=</span><span class="text-98c379">"nama of list_user"</span><span>&gt;</span> 
+                <br>
+                <br>
+                <span class="v-ml-20px">&lt;</span><span class="text-e06c75">li</span> <span>props=</span><Span class="text-98c379">"nama"</span> <span>&gt;</span><spam>nama user {{nama}}</li></spam><span>&lt;</span><span class="text-e06c75">li</span><span>&gt;</spam> 
+                <br>
+                <br>
+                <span>&lt;/</span><span>ul</span><span>&gt;</span> 
+               <br>
+               <br>
+                <span>&lt;</span><span>script</span><span>&gt;</span> 
+                <br>
+                <br>
+                <span class="text-61aeee v-ml-20px">find</span><span>(</span><span class="text-98c379">"username"</span><span>)</span><span class="text-d19a66">.state.list_user</span> <span>=</span> <span>[</span><span class="text-98c379">"daberdev","seleku","js"</span><span>]</span>
+                <br>
+                <br>
+                <span>&lt;/</span><span>script</span><span>&gt;</span> 
+            </div>
+            <h4># import component</h4>
+            <p>
+                seleku juga memungkinkan anda yang ingin mengimport component dengan menggunakan #import di bagian header file, 
+                component yang di import menggunakan import #import tidak boleh memiliki export default, dan #import bisa juga di 
+                gunakan untuk mengimport seperti import pada es 6 contoh
+            </p>
+            <div class="bg-darks vc-radius-10px v-mt-30px v-w-full v-h-full v-p-20px v-color-white">
+                <span class="text-61aeee">#import {</span><br>
+                <Span class="v-ml-20px">card</span><br>
+                <Span>} from </span> <span class="text-98c379">"card.selekux"</span>
+                <br>
+                <br>
+                <Span>&lt;</span><span></span>div<Span>&gt;</span>
+                <br>
+                <Span class="v-ml-20px">&lt;</span><span></span>card<Span>&gt;</span><Span>&lt;</span><span></span>/card<Span>&gt;</span>
+                <br>
+                <Span>&lt;</span><span></span>/div<Span>&gt;</span>
+            </div>
+            <p>file yang di import harus bertipekan selekux yang berarti merupakan component untuk seleku</p>
+        </div>
+    </section>
+
+    <script src="./valclass/valclass.js"></script>
+    <script src="./valclass/component-features.js"></script>
+    <script src="./valclass/v-maker-config.js"></script>
+</body>
+</html>
